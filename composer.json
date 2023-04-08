@@ -1,0 +1,14 @@
+{
+  "name": "prabhacse09/zend-http",
+  "description": "Zend Framework 1 Http package extending Laminas Http",
+  "type": "library",
+  "require": {
+    "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+    "laminas/laminas-http": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Zend_Http": "library/"
+    }
+  }
+}
