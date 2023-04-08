@@ -3,6 +3,17 @@
 //call Laminas Http Client
 class Zend_Http_Client extends Laminas\Http\Client
 {
+    public const GET     = 'GET';
+    public const POST    = 'POST';
+    public const PUT     = 'PUT';
+    public const HEAD    = 'HEAD';
+    public const DELETE  = 'DELETE';
+    public const TRACE   = 'TRACE';
+    public const OPTIONS = 'OPTIONS';
+    public const CONNECT = 'CONNECT';
+    public const MERGE   = 'MERGE';
+    public const PATCH   = 'PATCH';
+
     /**
      * Same as setOptions method
      *
