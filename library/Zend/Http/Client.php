@@ -47,9 +47,11 @@ class Zend_Http_Client extends Laminas\Http\Client
      * @return mixed
      * @throws Zend_Http_Client_Exception
      */
-    public function request($method)
+    public function request($method = null)
     {
-        $this->setMethod($method);
+        if ($method) {
+            $this->setMethod($method);
+        }
         $response = $this->send();
         $response->setStatus($response->getStatusCode());
         return $response;
